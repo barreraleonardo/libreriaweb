@@ -4,6 +4,7 @@ package com.libreriaweb.Libreria.entidades;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 import org.hibernate.annotations.GenericGenerator;
 
 @Entity
@@ -19,9 +20,9 @@ public class Libro {
     private Integer ejemplaresPrestados;
     private Integer ejemplaresRestantes;
     private boolean alta;
-    @OnetoOne
+    @OneToOne
     private Autor autor;
-    @OnetoOne
+    @OneToOne
     private Editorial editorial;
 
     /**
@@ -134,6 +135,34 @@ public class Libro {
      */
     public void setAlta(boolean alta) {
         this.alta = alta;
+    }
+
+    /**
+     * @return the autor
+     */
+    public Autor getAutor() {
+        return autor;
+    }
+
+    /**
+     * @param autor the autor to set
+     */
+    public void setAutor(Autor autor) {
+        this.autor = autor;
+    }
+
+    /**
+     * @return the editorial
+     */
+    public Editorial getEditorial() {
+        return editorial;
+    }
+
+    /**
+     * @param editorial the editorial to set
+     */
+    public void setEditorial(Editorial editorial) {
+        this.editorial = editorial;
     }
 
    
