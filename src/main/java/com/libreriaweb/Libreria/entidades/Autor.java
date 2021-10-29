@@ -1,7 +1,5 @@
-
 package com.libreriaweb.Libreria.entidades;
 
-
-public class Libro {
+public class Autor {
     
 }
