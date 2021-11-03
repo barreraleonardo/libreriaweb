@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="css/css/style.css">
     <title>LibreriaWEB</title>
 </head>
 
@@ -14,27 +14,27 @@
         <div id="contenedor">
             <div id="Formulario">
                 <h1>Carga de Libro</h1>
-                <form action="">
+                <form action="#" th:action="@{/guardarLibro}" method="post">
                     <div class="inputcarga">
                         <label for="isnb"></label>
-                        <input id="isnb" type="number" placeholder="Ingrese isbn" required>
+                        <input id="isnb" type="number" placeholder="Ingrese isbn" required name="isbn">
                     </div>
                     <div class="inputcarga">
                         <label for="titulo"></label>
-                        <input id="titulo" type="text" placeholder="Ingrese titulo" required>
+                        <input id="titulo" type="text" placeholder="Ingrese titulo" required name="titulo">
                     </div>
                     <div class="inputcarga">
                         <label for="anio"></label>
-                        <input id="anio" type="number" placeholder="Ingrese año" required>
+                        <input id="anio" type="number" placeholder="Ingrese año" required name="anio">
                     </div>
                     <div class="inputcarga">
                         <label for="ejemplares"></label>
-                        <input id="ejemplares" type="number" placeholder="Ingrese ejemplares" required>
+                        <input id="ejemplares" type="number" placeholder="Ingrese ejemplares" required name="ejemplares">
                     </div>
                     <div class="inputcarga">
                         <label for="ejemplaresPrestados"></label>
                         <input id="ejemplaresPrestados" type="number" placeholder="Ingrese ejemplares prestados"
-                            required>
+                            required name="ejemplaresPrestados">
                     </div>
                     <div class="botones">
                         <button type="submit">Guardar</button>
