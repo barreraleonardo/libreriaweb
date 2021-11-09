@@ -13,7 +13,7 @@ public class Libro {
     @GeneratedValue(generator = "uuid")
     @GenericGenerator(name = "uuid", strategy = "uuid2")
     private String id;
-    private Long isbn;
+    private long isbn;
     private String titulo;   
     private Integer anio;
     private Integer ejemplares;
