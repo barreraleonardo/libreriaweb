@@ -179,13 +179,33 @@
                     <li class="list-group-item">CARGAR AUTOR</li>
                   </a>
                   <a href="#">
-                    <li class="list-group-item">MODIFICAR DATO</li>
+                    <!--Acordeon modificar autor-->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#modificarAutor" aria-expanded="false" aria-controls="flush-collapseOne">
+                          MODIFICAR AUTOR.
+                        </button>
+                      </h2>
+                      <div id="modificarAutor" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                          <ul class="list-group">
+                            <ul class="list-group">
+                              <a href="#">
+                                
+                                  <form action="" class="bg-danger">
+                            <ul class="list-group p-0 m-0">
+                                    <input type="text" placeholder="Nombre del autor" class="p-0 m-0">
+                                  </form>
+                                
+                              </a> 
+                            </ul>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
                   </a>
-                  <a href="#">
-                    <li class="list-group-item">LISTAR AUTORES</li>
-                  </a>
-                  <a href="#">
-                    <li class="list-group-item">DAR DE BAJA</li>
+                  <a th:href="@{/autor/listarAutor}" target="_blank">
+                    <li class="list-group-item">LISTAR/ELIMINAR AUTORES</li>
                   </a>
                 </ul>
               </div>
